@@ -1,0 +1,16 @@
+<div class="wrap">
+	<div class="about">
+		<mast-about></mast-about>
+	</div>
+	<div class="blog-main">
+		<div class="blog-post" ng-repeat="post in data.posts">
+			<h1 class="blog-post-title">{{post.title}}</h1>
+			{{ post.body }}
+			<p class="blog-post-meta">
+				{{ post.date }} por <a href="#">{{ post.author }}</a>
+			</p>
+		</div>
+	</div>
+	<div class="clear"></div>
+</div>
+

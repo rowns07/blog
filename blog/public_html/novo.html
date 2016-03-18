@@ -1,0 +1,31 @@
+<div ng-if="sessionLogin.length">
+    <div class="wrap">
+        <div class="blog-main">
+            <form>
+                <div class="input"> 
+                    <label for="title">Título</label>
+                    <input type="text" class="form-control" id="title" name="title" ng-model="controller.title" placeholder="Título do post.">
+                </div>
+                <div class="input txt"> 
+                    <label for="body">Descrição</label> 
+                    <textarea id="body" name="body" ng-model="controller.body" class="form-control" rows="7" placeholder="Descrição do post."></textarea> 
+                </div> 
+                <div class="input"> 
+                    <label for="author">Autor</label> 
+                    <input type="text" class="form-control" id="author" name="author" ng-model="controller.author" placeholder="Autor do post.">
+                </div> 
+                <div class="input">
+                    <label for="dt">Data</label> 
+                    <input id="dt" name="dt" ng-model="controller.dt" class="form-control" placeholder="Data do post." disabled> 
+                </div>
+                <div style="text-align: center; margin-top:60px; ">
+                    <button ng-click="controller.addMessage()" type="button" class="btn btn-primary">Enviar</button>
+                </div>
+            </form> 
+            <div style="margin-top: 10px" > 
+                <div ng-if="controller.msg"> <p class="bg-primary" style="padding: 10px" >{{ controller.msg}}</p>
+                </div> 
+            </div>
+        </div> 
+    </div>
+</div>

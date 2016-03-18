@@ -1,0 +1,13 @@
+<form>
+    <div class="input">
+        <label for="usuario">Usuario</label>
+        <input type="text" ng-model="controller.login" id="usuario">
+    </div>
+    <div class="input">
+        <label for="senha">Senha</label>
+        <input type="password" ng-model="controller.senha" id="senha">
+    </div>
+    <div style="text-align: center; margin-top:60px;">
+        <button ng-click="controller.logar()">Logar</button>
+    </div>
+</form>
